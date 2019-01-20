@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
-  
-  {path: 'heros',loadChildren: './heros/heros.module#HerosModule'},
-  {path: 'engine',loadChildren: './engine/engine.module#EngineModule'},
-  {path: '',redirectTo: 'heros',pathMatch: 'full'}
+  { path: '', redirectTo: 'home', pathMatch: "full" },
+  { path: 'home', loadChildren: 'src/app/page/home/home.module#HomeModule' },
+  { path: '**', component: NotFoundPageComponent }
+
 ];
 
 @NgModule({

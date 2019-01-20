@@ -1,0 +1,14 @@
+<div>
+  <ng-container *ngFor="let imgInfo of imgInfos">
+    <div>
+      <app-img-text [imgInfo]="imgInfo">
+        <div class="text-17">
+          <h1>{{imgInfo.title}}</h1>
+          <ng-container *ngFor="let text of imgInfo.desc">
+            <p>{{text}}</p>
+          </ng-container>
+        </div>
+      </app-img-text>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <ng-container *ngFor="let nav of navs;">
+          <li [routerLink]="nav.url" routerLinkActive="active">
+            <!-- <a>{{nav.name}}</a> -->
+            <a href="javascirpt:void()">{{nav.name}} <span class="sr-only"></span></a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</nav>

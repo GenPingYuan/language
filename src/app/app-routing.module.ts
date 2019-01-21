@@ -5,6 +5,7 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
   { path: 'home', loadChildren: 'src/app/page/home/home.module#HomeModule' },
+  { path: 'sheLife', loadChildren: 'src/app/page/shelife/shelife.module#ShelifeModule' },
   { path: '**', component: NotFoundPageComponent }
 
 ];

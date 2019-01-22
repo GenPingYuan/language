@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ShelifeRoutingModule } from './shelife-routing.module';
 import { ShelifeComponent } from './shelife.component';
-import { LifeRecordComponent, AvaterComponent } from 'src/app/components/index'
+import { LifeRecordComponent, AvaterComponent, IssueTextComponent } from 'src/app/components/index'
 
 @NgModule({
-  declarations: [ShelifeComponent, LifeRecordComponent, AvaterComponent],
+  declarations: [ShelifeComponent, LifeRecordComponent, AvaterComponent, IssueTextComponent],
   imports: [
     CommonModule,
     ShelifeRoutingModule

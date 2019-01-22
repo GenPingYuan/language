@@ -1,11 +1,15 @@
-<div>
+<div class="record-card">
   <div class="avater-name">
     <div class="avater">
       <app-avater [avater]="lifeRecord?.user?.avater"></app-avater>
     </div>
-    <div class="nick-name">{{lifeRecord?.user?.nickName}}</div>
+    <div class="nick-name">
+      {{lifeRecord?.user?.nickName}}
+    </div>
   </div>
-  <div class="issue-content">{{lifeRecord?.issueContent}}</div>
+  <div class="issue-content">
+    <app-issue-text [text]="lifeRecord?.issueContent"></app-issue-text>
+  </div>
   <div class="issue-media"></div>
   <div class="comment"></div>
 </div>

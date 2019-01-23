@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { ShelifeRoutingModule } from './shelife-routing.module';
 import { ShelifeComponent } from './shelife.component';
-import { LifeRecordComponent, AvaterComponent, IssueTextComponent } from 'src/app/components/index'
+import { PublicComponentModule } from 'src/app/public/public-component.module';
 
 @NgModule({
-  declarations: [ShelifeComponent, LifeRecordComponent, AvaterComponent, IssueTextComponent],
+  declarations: [ShelifeComponent],
   imports: [
     CommonModule,
-    ShelifeRoutingModule
+    ShelifeRoutingModule,
+    PublicComponentModule
   ]
 })
 export class ShelifeModule { }

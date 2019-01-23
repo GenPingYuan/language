@@ -1,0 +1,10 @@
+{
+    "loginName": "selina",
+    "password": "selina",
+    "nickName": "S.H.E",
+    "age": 17,
+    "avatar": {
+        "id": 10,
+        "url": "assets/headImg/headImg.jpg"
+    }
+}

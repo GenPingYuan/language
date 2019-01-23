@@ -12,7 +12,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.service.getImg()
-      .subscribe((imgInfos) => this.imgInfos = imgInfos);
+      .subscribe((imgInfos) => {
+        
+        this.imgInfos = imgInfos
+      });
   }
 
 }

@@ -1,9 +1,43 @@
 :host {
     display: flex;
     justify-content: center;
-    align-content: flex-start;
-    .life-record-list {
-        margin-top: 10px !important;
-        
+    align-items: center;
+    .life-record-page {
+        // 生活页 布局
+        width: 55%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        /*
+            左侧头像区域样式
+        */
+        .avatar-and-menu {
+            // 头像样式
+            .avatar {
+                // 头像居中对齐
+                margin: 0px auto !important;
+                width: 15rem;
+                border: 0.3rem solid #ffffff !important;
+                border-radius: 50%;
+            }
+            // 昵称
+            .nickName {
+                font-size: 20px;
+                // font-weight: 600;
+                padding: 10px 20px !important;
+            }
+        }
+        /*
+            左侧封面和帖子区域样式
+        */
+        .cover-and-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .life-record-list {
+            margin-top: 10px !important;
+            
+        }
     }
+    
 }

@@ -1,5 +1,31 @@
-<div class="life-record-list">
-  <ng-container *ngFor="let lifeRecord of lifeRecords">
-    <app-life-record [lifeRecord]="lifeRecord"></app-life-record>
-  </ng-container>
+<div class="life-record-page">
+  <div class="avatar-and-menu">
+    <div class="avatar-nickName">
+      <div class="avatar">
+        <!--头像-->
+        <app-avater></app-avater>
+      </div>
+      <div class="nickName">
+        <!-- 昵称 -->
+        <app-user field="nickName"></app-user>
+      </div>
+    </div>
+    <div class="life-menu">
+      <!-- 左侧菜单栏 -->
+      <app-life-menu></app-life-menu>
+    </div>
+  </div>
+  <div class="cover-and-container">
+    <div></div>
+    <div>
+      <div>
+        <div class="life-record-list">
+          <ng-container *ngFor="let lifeRecord of lifeRecords">
+            <app-life-record [lifeRecord]="lifeRecord"></app-life-record>
+          </ng-container>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
 </div>

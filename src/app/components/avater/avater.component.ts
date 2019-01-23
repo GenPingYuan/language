@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Avatar } from 'src/app/model/user/avatar';
-
+import { UserService } from 'src/app/service/user/user.service'
+import { User } from 'src/app/model/user/user';
 @Component({
   selector: 'app-avater',
   templateUrl: './avater.component.html',
@@ -8,13 +9,16 @@ import { Avatar } from 'src/app/model/user/avatar';
 })
 export class AvaterComponent implements OnInit {
 
-  @Input()
   avater: Avatar;
 
-  constructor() { }
+  constructor(private service: UserService) { }
 
   ngOnInit() {
-    console.warn(this.avater)
+    this.service.getUser()
+    .subscribe((user: User)=> {
+      this.avater = user.avatar;
+    })
+    
   }
 
 }

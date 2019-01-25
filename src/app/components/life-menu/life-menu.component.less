@@ -1,0 +1,30 @@
+// 链接背景色
+.link-bg-color {
+    background-color: darken(#ffffff,2%) !important;
+
+}
+
+:host {
+    .nav {
+        li {
+            padding: 10px 5px !important;
+            margin: 3px 0px !important;
+            // font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 0px !important;
+            outline: none;
+            // &:focus {
+            //      outline:none;
+            // }
+            &:hover {
+                .link-bg-color
+            }
+            transition: all 0.1s ease-out;
+            // -webkit-transition: all 0.1s ease-out;
+        }
+        .active {
+            .link-bg-color
+        }
+    }
+}

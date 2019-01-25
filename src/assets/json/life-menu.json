@@ -3,12 +3,12 @@
         "id": 1,
         "menuName": "首页",
         "sort": 1,
-        "link": "/"
+        "link": "./"
     },
     {
         "id": 2,
         "menuName": "简介",
         "sort": 2,
-        "link": "/about"
+        "link": "./about"
     }
 ]

@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ShelifeRoutingModule } from './shelife-routing.module';
 import { ShelifeComponent } from './shelife.component';
-import { PublicComponentModule } from 'src/app/public/public-component.module';
+import { PublicModule } from 'src/app/public/public.module';
+import { HomeComponent } from './home/home/home.component';
+import { AboutComponent } from './about/about/about.component';
+import { CoverComponent } from './cover/cover.component'
 
 @NgModule({
-  declarations: [ShelifeComponent],
+  declarations: [ShelifeComponent, HomeComponent, AboutComponent, CoverComponent],
   imports: [
     CommonModule,
     ShelifeRoutingModule,
-    PublicComponentModule
+    PublicModule
   ]
 })
 export class ShelifeModule { }

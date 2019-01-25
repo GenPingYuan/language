@@ -1,7 +1,7 @@
 <div>
-  <ul>
+  <ul class="nav nav-pills nav-stacked">
     <ng-container *ngFor="let menu of lifeMenu;">
-      <li>
+      <li [routerLink]="menu.link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         {{menu.menuName}}
       </li>
     </ng-container>

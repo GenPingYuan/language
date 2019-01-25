@@ -4,5 +4,6 @@ export class Life {
     user: User;
     issueContent: string;
     issueDate: Date;
+    // cover: 
     // issueMedia:
 }

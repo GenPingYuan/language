@@ -5,14 +5,18 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        // 余数为1时，1的那张图片宽度为100%
         .one {
             width: @imgWidth * 3 !important;
         }
+        // 余数为2时，那两张图片的宽度为 1.5张图片的宽度
         .two {
             width: @imgWidth + @imgWidth / 2 !important;
         } 
         >div {
+            // 默认图片占1/3的宽度
             width: @imgWidth;
+            padding: 2px !important;
             img {
                 width: 100%;
             }

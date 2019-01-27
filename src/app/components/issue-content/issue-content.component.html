@@ -1,7 +1,12 @@
 <div *ngIf="sourceCount > 0" class="issue-source">
+  <!-- 循环遍历发表的图片 -->
   <ng-container *ngFor="let media of issueSource;first as isFirst;last as isLast; index as index">
-    <div *ngIf="index <= 8" [ngClass]="{'one': residue === 1 && isFirst,'two': residue === 2 && index <= 1}" >
-      <img src="assets/img/lifeimg.jpg">
-    </div>
+    <!-- 限制图片显示的最多数量 -->
+    <ng-container>
+      <!-- 如果发表的图片余数为 1,2时，指定特定的样式名称-->
+      <div [ngClass]="{'one': residue === 1 && isFirst,'two': residue === 2 && index <= 1}">
+        <img [src]="media.src">
+      </div>
+    </ng-container>
   </ng-container>
 </div>

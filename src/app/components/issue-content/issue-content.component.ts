@@ -8,17 +8,22 @@ import { Media } from 'src/app/model/media/media';
 })
 export class IssueContentComponent implements OnInit {
 
+  // 发布的图片
   @Input()
-  issueSource: Media[]
+  issueSource: Media[];
+  // 发布图片的数量
   sourceCount: number;
+  // 发布图片数量与3的余数
   residue: number = 0;
+  
   constructor() { }
 
   ngOnInit() {
+    // console.log(this.issueSource);
     this.sourceCount = this.issueSource.length;
-    if(this.sourceCount <= 9) {
+    // if (this.sourceCount <= 9) {
       this.residue = this.sourceCount % 3;
-    }
+    // }
   }
 
 }

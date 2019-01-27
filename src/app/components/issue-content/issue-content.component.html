@@ -1,0 +1,7 @@
+<div *ngIf="sourceCount > 0" class="issue-source">
+  <ng-container *ngFor="let media of issueSource;first as isFirst;last as isLast; index as index">
+    <div *ngIf="index <= 8" [ngClass]="{'one': residue === 1 && isFirst,'two': residue === 2 && index <= 1}" >
+      <img src="assets/img/lifeimg.jpg">
+    </div>
+  </ng-container>
+</div>

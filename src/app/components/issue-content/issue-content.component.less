@@ -1,0 +1,21 @@
+@imgWidth: 100/3%;
+:host {
+    .issue-source {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .one {
+            width: @imgWidth * 3 !important;
+        }
+        .two {
+            width: @imgWidth + @imgWidth / 2 !important;
+        } 
+        >div {
+            width: @imgWidth;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

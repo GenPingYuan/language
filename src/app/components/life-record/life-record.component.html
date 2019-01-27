@@ -4,12 +4,14 @@
       <app-avater></app-avater>
     </div>
     <div class="nick-name">
-      {{lifeRecord?.user?.nickName}}
+      <app-user field="nickName"></app-user>
     </div>
   </div>
   <div class="issue-content">
     <app-issue-text [text]="lifeRecord?.issueContent"></app-issue-text>
   </div>
-  <div class="issue-media"></div>
+  <div class="issue-media">
+    <app-issue-content [issueSource]="lifeRecord?.issueSource"></app-issue-content>
+  </div>
   <div class="comment"></div>
 </div>

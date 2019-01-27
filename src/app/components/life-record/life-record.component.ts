@@ -18,7 +18,7 @@ export class LifeRecordComponent implements OnInit {
   constructor(private service: ShelifeService) { }
 
   ngOnInit() {
-    console.warn(this.lifeRecord)
+    // console.warn(this.lifeRecord)
   }
 
 }

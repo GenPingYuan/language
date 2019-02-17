@@ -11,7 +11,7 @@ export class UserComponent implements OnInit {
   @Input()
   field: string;
   private user: User;
-  private value;
+  value: String;
   constructor(private service: UserService) { }
 
   ngOnInit() {

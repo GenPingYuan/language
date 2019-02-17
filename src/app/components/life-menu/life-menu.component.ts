@@ -9,7 +9,7 @@ import { LifeMenu } from 'src/app/model/menu/life-menu';
 })
 export class LifeMenuComponent implements OnInit {
 
-  private lifeMenu: LifeMenu;
+  lifeMenu: LifeMenu;
   constructor(private service: LifeMenuService) { }
 
   ngOnInit() {

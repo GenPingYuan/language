@@ -1,5 +1,5 @@
 import { Menu } from './menu';
 
-export class LifeMenu extends Menu{
+export interface LifeMenu extends Menu{
 
 }

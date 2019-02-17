@@ -8,7 +8,7 @@ import { HomeService } from 'src/app/service/home/home.service';
 })
 export class HeadComponent implements OnInit {
 
-  private navs: Nav[];
+ navs: Nav[];
 
   constructor(private service: HomeService) { }
 

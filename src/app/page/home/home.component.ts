@@ -6,7 +6,7 @@ import { HomeService } from 'src/app/service/home/home.service'
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-  private imgInfos;
+  imgInfos;
 
   constructor(private service: HomeService) { }
 

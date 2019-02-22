@@ -8,13 +8,13 @@ import { Component, OnInit,Input } from '@angular/core';
 export class ImgTextComponent implements OnInit {
   
 
-  @Input() imgInfo: Object; 
+  @Input() imgInfo; 
 
   styles;
   constructor() { }
 
   ngOnInit() {
-    console.warn(this.imgInfo)
+    // console.warn(this.imgInfo)
     this.styles = {
       "background": "url(" + this.imgInfo["url"] + ")",
       "height": "900px"

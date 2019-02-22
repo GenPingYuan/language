@@ -1,0 +1,10 @@
+[
+    {
+        "url":  "/home",
+        "name": "首页"
+    },
+    {
+        "url":  "/sheLife",
+        "name": "she的动态"
+    }
+]
